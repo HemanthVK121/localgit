@@ -17,7 +17,7 @@ jobs:
           coverage: none
 
       - name: Install composer dependencies
-        run: composer install -n --prefer-dist
+        run: composer global require laravel/installer
 
       - name: Run Static Analysis
         run: ./vendor/bin/phpstan --error-format=github
