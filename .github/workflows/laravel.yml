@@ -17,7 +17,7 @@ jobs:
           coverage: none
  
       - name: Run composer install
-        run: composer install -n --prefer-dist
+        run: composer global require laravel/installer
  
       - name: Prepare Laravel Application
         run: |
